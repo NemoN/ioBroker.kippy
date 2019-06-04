@@ -1,0 +1,120 @@
+{
+	"common": {
+		"name": "kippy",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "Kippy Vita",
+		"titleLang": {
+			"en": "Kippy Vita",
+			"de": "Kippy Vita",
+			"ru": "Киппи Вита",
+			"pt": "Kippy Vita",
+			"nl": "Kippy Vita",
+			"fr": "Kippy Vita",
+			"it": "Kippy Vita",
+			"es": "Kippy vita",
+			"pl": "Kippy Vita",
+			"zh-cn": "Kippy Vita"
+		},
+		"desc": {
+			"en": "Kippy Vita GPS Logger",
+			"de": "Kippy Vita GPS Logger",
+			"ru": "Киппи Вита GPS Logger",
+			"pt": "Kippy Vita GPS Logger",
+			"nl": "Kippy Vita GPS-logger",
+			"fr": "Enregistreur GPS Kippy Vita",
+			"it": "Kippy Vita GPS Logger",
+			"es": "GPS Logger Kippy Vita",
+			"pl": "Rejestrator GPS Kippy Vita",
+			"zh-cn": "Kippy Vita GPS记录仪"
+		},
+		"authors": [
+			"NemoN <thomas.oeding@gmail.com>"
+		],
+		"keywords": [
+			"gps",
+			"logger",
+			"location",
+			"gsm"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "kippy.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/NemoN/ioBroker.kippy/master/admin/kippy.png",
+		"readme": "https://github.com/NemoN/ioBroker.kippy/blob/master/README.md",
+		"loglevel": "info",
+		"mode": "schedule",
+		"type": "geoposition",
+		"compact": true,
+		"materialize": true,
+		"materializeTab": true,
+		"adminTab": {
+			"singleton": true,
+			"name": {
+				"en": "Kippy Vita",
+				"de": "Kippy Vita",
+				"ru": "Киппи Вита",
+				"pt": "Kippy Vita",
+				"nl": "Kippy Vita",
+				"fr": "Kippy Vita",
+				"it": "Kippy Vita",
+				"es": "Kippy vita",
+				"pl": "Kippy Vita",
+				"zh-cn": "Kippy Vita"
+			},
+			"link": "",
+			"fa-icon": "info"
+		},
+		"dependencies": [
+			{
+				"admin": ">=3.0.0"
+			},
+			{
+				"js-controller": ">=1.4.2"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}
